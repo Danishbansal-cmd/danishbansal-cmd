@@ -39,6 +39,32 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --spacing-header-height: 80px;
+  --color-blue-shade-new: #007aff;
+}
+
+@font-face {
+  font-family: 'Noto Sans Mono';
+  src: local('Noto Sans Mono') url('./assets/fonts/NotoSansMono-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Define the range of weights */
+  font-stretch: 50% 100%; /* Define the range of widths (you may need to adjust these values) */
+}
+
+@font-face {
+  font-family: 'ArchivoBlack';
+  src: url('./assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 50% 100%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sirivennela';
+  src: url('./assets/fonts/Sirivennela-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 50% 100%;
+  font-display: swap;
 }
 
 :root {
@@ -113,6 +139,11 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: 'Noto Sans Mono', monospace; 
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none;    /* For Firefox */
+    -ms-user-select: none;     /* For Internet Explorer/Edge */
   }
   body {
     @apply bg-background text-foreground;

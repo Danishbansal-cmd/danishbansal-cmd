@@ -6,7 +6,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className='App flex flex-col items-center min-h-screen overflow-hidden'>
+      <div className='flex flex-col items-center min-h-screen overflow-hidden'>
         <Routes>
           <Route path='/' element={<HomePage />} />
         </Routes>

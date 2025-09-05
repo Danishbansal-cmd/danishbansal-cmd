@@ -9,7 +9,7 @@
     className,
     thumbClassName,
     ...props
-  }: React.ComponentProps<typeof SwitchPrimitive.Root> & {
+  }: React.ComponentProps<typeof SwitchPrimitive.Root> & { 
     thumbClassName?: string;
   }) {
     return (
