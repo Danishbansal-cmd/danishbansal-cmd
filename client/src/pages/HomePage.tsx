@@ -1,8 +1,8 @@
-import { GradientDiv } from "@/components/gradient/gradientdiv";
-import { useTheme } from "@/components/theme/ThemeContext";
-import { Switch } from "@/components/ui/switch";
+// import { GradientDiv } from "@/components/gradient/gradientdiv";
+// import { useTheme } from "@/components/theme/ThemeContext";
+// import { Switch } from "@/components/ui/switch";
 import Header from "@/components/header";
-import Loader from "@/components/loader";
+// import Loader from "@/components/loader";
 import Footer from "@/components/footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -13,8 +13,8 @@ import ProfileSection from "@/components/profile";
 
 function HomePage() {
 
-    const { theme, toggleTheme } = useTheme();
-    const isDark = theme === 'dark';
+    // const { theme, toggleTheme } = useTheme();
+    // const isDark = theme === 'dark';
 
     gsap.registerPlugin(useGSAP);
     useGSAP(() => {
