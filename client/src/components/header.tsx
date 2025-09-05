@@ -36,12 +36,14 @@ function Header() {
                             <button className="group sm:block hidden px-5 py-1 tracking-tight text-white bg-blue-shade-new hover:text-white cursor-pointer duration-200 transition-all active:scale-80 mx-4">
                                 Contact <span className="me gap-2  inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
                             </button>
-                            <div className={`${openNav ? 'top-header-height' : '-top-[1000px]'} absolute -z-10 left-0 bg-[#101010] w-screen h-screen md:hidden flex items-start px-5 transition-all duration-600 ease-in-out`}>
+                            <div className={`${openNav ? 'top-0' : '-top-[1000px]'} absolute -z-10 left-0 bg-[#101010] w-screen h-screen md:hidden flex items-start px-5 transition-all duration-600 ease-in-out pt-header-height`}>
                                 <div className="relative w-full h-full">
                                     <div className={`flex flex-col py-7 text-4xl w-full`}>
                                         {<NavBar className={"text-white cursor-pointer hover:line-through decoration-[#464141] decoration-2 hover:text-7xl transition-all duration-100 focus:cursor-grabbing"} />}
                                     </div>
-                                    <button onClick={toggleNav} className="group absolute bottom-22 right-0 px-4 py-0 bg-white cursor-pointer focus:scale-80">
+
+                                    {/* close navigation button */}
+                                    <button onClick={toggleNav} className="group absolute bottom-20 right-0 px-4 py-0 bg-white cursor-pointer focus:scale-80">
                                         <div className="rotate-90 text-black text-5xl group-hover:rotate-270 transition-all">&#x2799;</div>
                                     </button>
                                 </div>
