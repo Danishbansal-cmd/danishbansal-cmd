@@ -33,9 +33,11 @@ function Header() {
                             <nav className="hidden md:flex gap-6 text-sm items-center">
                                 {<NavBar className={`text-white cursor-pointer hover:scale-125 hover:line-through decoration-[#464141] decoration-2`}/>}
                             </nav>
-                            <button className="group sm:block hidden px-5 py-1 tracking-tight text-white bg-blue-shade-new hover:text-white cursor-pointer duration-200 transition-all active:scale-80 mx-4">
-                                Contact <span className="me gap-2  inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
-                            </button>
+                            <NavLink to={"mailto:danishbansal60@gmail.com"}>
+                                <button className="group sm:block hidden px-5 py-1 tracking-tight text-white bg-blue-shade-new hover:text-white cursor-pointer duration-200 transition-all active:scale-80 mx-4">
+                                    Contact <span className="me gap-2  inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
+                                </button>
+                            </NavLink>
                             <div className={`${openNav ? 'top-0' : '-top-[1000px]'} absolute -z-10 left-0 bg-[#101010] w-screen h-screen md:hidden flex items-start px-5 transition-all duration-600 ease-in-out pt-header-height`}>
                                 <div className="relative w-full h-full">
                                     <div className={`flex flex-col py-7 text-4xl w-full`}>

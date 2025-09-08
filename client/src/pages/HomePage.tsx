@@ -8,6 +8,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ProfileSection from "@/components/profile";
 import { useEffect, useState } from "react";
+import FrequentlyAskedQuestions from "@/components/faq";
+import { NavLink } from "react-router-dom";
+import HorizontalScrollCarousel from "@/components/horizontalScrollCarousel";
 
 
 
@@ -19,7 +22,6 @@ function HomePage() {
 
     function getBreakPoint(width: number){
         if(width < 768) return "sm";
-        if(width < 992) return "md";
         return "lg";
     }
 
@@ -75,6 +77,14 @@ function HomePage() {
             repeat: -1,
             repeatDelay: 1,
         });
+
+    //     gsap.to(".home", {
+    //   boxShadow: "0 0 40px 10px rgba(0, 150, 255, 0.6)", // glowing blue aura
+    //   repeat: -1,        // infinite loop
+    //   yoyo: true,        // go back and forth
+    //   duration: 2,       // seconds for each pulse
+    //   ease: "power2.inOut"
+    // });
     });
 
     return (
@@ -84,6 +94,27 @@ function HomePage() {
             {/* all the content goes here from header to footer here */}
             <div className={`${showLoader ? 'hidden' : 'block'}`}>
                 <Header />
+
+                {/* home content goes here */}
+                <section>
+                    <div className="home w-screen bg-black flex flex-col items-center justify-center px-5 text-white bg-radial-[at_25%_45%] from-[#464545] to-black to-60%">
+                        <div className="lg:container w-full my-24 text-center">
+                            <div className="capitalize text-2xl" style={{fontFamily: "Sirivennela"}}>Best profile award</div>
+                            <div 
+                            className="text-3xl sm:text-6xl capitalize text-center" 
+                            style={{letterSpacing: "-5px",}}>
+                                Lets start <br /> with the beautiful <br /> presentation.
+                            </div>
+                            <div className="text-sm pt-4">
+                                A profile delve into the realm of  creativity with excellence and expertise. 
+                                <br /> We help businesses and startups launch apps faster, reduce cost and scale with secure code.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <HorizontalScrollCarousel />
+
                 {/* <div className="relative bg-no-repeat bg-cover bg-center min-h-screen grayscale-100"
             style={{ backgroundImage: `url(/images/profile-collage.png)`,}}
             >
@@ -99,6 +130,8 @@ function HomePage() {
 
                 <ProfileSection />
 
+                <FrequentlyAskedQuestions />
+
                 {/* Exploring new challenges Section */}
                 <section>
                     <div className="w-screen flex flex-col items-center px-5 bg-black text-white">
@@ -106,13 +139,14 @@ function HomePage() {
                             <div className="bg-[#0f0f0f] p-2 border border-[#464141]">
                                 <div className="p-8 bg-auto bg-center w-full h-full flex flex-col gap-4 items-center justify-center" style={{ backgroundImage: `url(/gif/bg-space.gif)` }}>
                                     <h1 className="text-3xl sm:text-6xl font-bold [word-spacing:-8px] tracking-tighter text-center">Exploring new challenges</h1>
-                                    <button className="group px-5 py-2 tracking-tight text-white bg-blue-shade-new cursor-pointer duration-200 transition-all active:scale-80 mx-4">
-                                        Contact <span className="me gap-2 inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
-                                    </button>
+                                    <NavLink to={"mailto:danishbansal60@gmail.com"}>
+                                        <button className="group px-5 py-2 tracking-tight text-white bg-blue-shade-new cursor-pointer duration-200 transition-all active:scale-80 mx-4">
+                                            Contact <span className="me gap-2 inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
                 {/* <div>

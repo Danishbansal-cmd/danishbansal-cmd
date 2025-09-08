@@ -65,6 +65,8 @@ function ProfileSection() {
                                                 </p>
                                             </div>
 
+                                            <hr className="border-border-shade" />
+
                                             <div>
                                                 <p style={{ fontFamily: "Sirivennela" }} className="text-xl italic">Bonafide Technologies, Chandigarh, Punjab, India</p>
                                                 <p className="text-xl">Flutter Application Developer Intern</p>
@@ -119,6 +121,8 @@ function ProfileSection() {
                                                 </p>
                                             </div>
 
+                                            <hr className="border-border-shade" />
+
                                             <div>
                                                 <p style={{ fontFamily: "Sirivennela" }} className="text-xl italic">Northern Pures, Toronto, Canada </p>
                                                 <p className="text-xl">Diploma in Computer Engineering Technician</p>
@@ -139,6 +143,8 @@ function ProfileSection() {
                                                     Creating the secure communication between the computers and the wires used for the purposes, includes all the information and made one capable to implement such in real life.
                                                 </p>
                                             </div>
+
+                                            <hr className="border-border-shade" />
 
                                             <div>
                                                 <p style={{ fontFamily: "Sirivennela" }} className="text-xl italic">Government Polytechnic College, Bathinda, Punjab, India </p>

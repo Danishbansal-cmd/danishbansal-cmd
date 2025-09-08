@@ -42,6 +42,8 @@
 
   --spacing-header-height: 80px;
   --color-blue-shade-new: #007aff;
+  --color-border-shade: #464141;
+  --color-background-shade: #0f0f0f;
 }
 
 @font-face {
