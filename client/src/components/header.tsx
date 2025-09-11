@@ -12,7 +12,10 @@ function Header() {
         return (
             <>
                 <NavLink to={"#"} className={`${className}`}>Home</NavLink>
-                <NavLink to={"#"} className={`${className}`}>About</NavLink>
+                <NavLink onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("profile_about")?.scrollIntoView({behavior: "smooth"});
+                }}   to={"#"} className={`${className}`}>About</NavLink>
                 <NavLink to={"#"} className={`${className}`}>Projects</NavLink>
                 <NavLink onClick={(e) => {
                     e.preventDefault();

@@ -1,27 +1,36 @@
 import { NavLink } from "react-router-dom";
 
-
 function Footer() {
     return (
         <footer className="w-screen px-5 bg-[#101010] flex flex-col items-center text-white">
-            <div className="grid grid-cols-1 md:grid-cols-3 border lg:container w-full border-[#464141] my-8 px-4 py-4">
-                <div className="flex flex-col gap-6">
-                    <div>
-                        <div className="bg-cover bg-no-repeat w-40 h-40 border border-[#464141]" style={{backgroundImage: `url(/images/logo.png)`}}>
-                        </div>
-                        <p className="text-xs text-white">No stop - <span className="italic text-sm text-gray-400">Creativity</span></p>
-                    </div>
-                    <div className="">
-                        <p style={{fontFamily: "ArchivoBlack"}} className="text-5xl">HAVE FUN</p>
-                    </div>
+            <div className="border lg:container w-full border-[#464141] my-8 p-8">
+                <div className="text-left">
+                    <p className="leading-none uppercase text-base font-bold">have a project in mind?</p>
+                    <p  className="leading-none uppercase text-[15vw] font-extrabold text-zinc-700 tracking-tighter" 
+                    style={{ lineHeight: "0.9", textIndent: "-1rem" }}>let's talk</p> 
                 </div>
-                <div className="col-span-2 w-full text-right">
-                    <div className="flex flex-col gap-3">
-                        <p className="text-2xl font-bold">Connect</p>
-                        <NavLink to={"https://www.linkedin.com/in/danishbansal-cmd/"} target="_blank">Linkedin</NavLink>
-                        <NavLink to={"https://github.com/Danishbansal-cmd"} target="_blank">Github</NavLink>
-                        <NavLink to={"https://leetcode.com/u/danishbansal/"} target="_blank">LeetCode</NavLink>
-                        <NavLink to={"https://x.com/danishbansal01"} target="_blank">X</NavLink>
+
+                <div className="flex flex-col md:flex-row gap-5 items-start justify-between md:items-center mt-10">
+                    <div className="flex flex-wrap gap-2 md:gap-6">
+                        <NavLink to={"https://www.linkedin.com/in/danishbansal-cmd/"} target="_blank">
+                            <div className="capitalize px-8 py-2 text-lg font-medium bg-transparent hover:bg-zinc-600 transition-all duration-200 border border-zinc-700 text-zinc-300">
+                                Linkedin
+                            </div>
+                        </NavLink>
+                        <NavLink to={"https://github.com/Danishbansal-cmd"} target="_blank">
+                            <div className="capitalize px-8 py-2 text-lg font-medium bg-transparent hover:bg-zinc-600 transition-all duration-200 border border-zinc-700 text-zinc-300">
+                                Github
+                            </div>
+                        </NavLink>
+                        <NavLink to={"https://x.com/danishbansal01"} target="_blank">
+                            <div className="capitalize px-8 py-2 text-lg font-medium bg-transparent hover:bg-zinc-600 transition-all duration-200 border border-zinc-700 text-zinc-300">
+                                X
+                            </div>
+                        </NavLink>
+                    </div>
+                    <div className="text-xs text-left md:text-right text-gray-400">
+                        <p>Chandigarh, Punjab</p>
+                        <p>danishbansal2001@gmail.com</p>
                     </div>
                 </div>
             </div>

@@ -14,8 +14,9 @@ function ProfileSection() {
 
     return (
         // profile Section
-        <section>
-            <div className="w-screen flex flex-col items-center px-5 bg-black text-white">
+        <section id="profile_about">
+            <div className="w-screen flex flex-col items-center px-5 bg-black text-white
+            bg-radial-[at_90%_45%] from-[#464545] to-black to-70%">
                 <div className="lg:container w-full py-16">
                     <div className="grid grid-cols-1 md:grid-cols-3 bg-[#0f0f0f] p-1">
                         <div className="flex flex-col gap-8 col-span-2 px-8 py-10">

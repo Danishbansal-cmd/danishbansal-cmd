@@ -11,6 +11,9 @@ import { useEffect, useState } from "react";
 import FrequentlyAskedQuestions from "@/components/faq";
 import { NavLink } from "react-router-dom";
 import HorizontalScrollCarousel from "@/components/horizontalScrollCarousel";
+import Belief from "@/components/belief";
+import HomeContent from "@/components/homeContent";
+import Projects from "@/components/projects";
 
 
 
@@ -95,25 +98,11 @@ function HomePage() {
             <div className={`${showLoader ? 'hidden' : 'block'}`}>
                 <Header />
 
-                {/* home content goes here */}
-                <section>
-                    <div className="home w-screen bg-black flex flex-col items-center justify-center px-5 text-white bg-radial-[at_25%_45%] from-[#464545] to-black to-60%">
-                        <div className="lg:container w-full my-24 text-center">
-                            <div className="capitalize text-2xl" style={{fontFamily: "Sirivennela"}}>Best profile award</div>
-                            <div 
-                            className="text-3xl sm:text-6xl capitalize text-center" 
-                            style={{letterSpacing: "-5px",}}>
-                                Lets start <br /> with the beautiful <br /> presentation.
-                            </div>
-                            <div className="text-sm pt-4">
-                                A profile delve into the realm of  creativity with excellence and expertise. 
-                                <br /> We help businesses and startups launch apps faster, reduce cost and scale with secure code.
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <HomeContent />
 
                 <HorizontalScrollCarousel />
+
+                <Projects />
 
                 {/* <div className="relative bg-no-repeat bg-cover bg-center min-h-screen grayscale-100"
             style={{ backgroundImage: `url(/images/profile-collage.png)`,}}
@@ -129,6 +118,8 @@ function HomePage() {
             </div> */}
 
                 <ProfileSection />
+
+                <Belief />
 
                 <FrequentlyAskedQuestions />
 

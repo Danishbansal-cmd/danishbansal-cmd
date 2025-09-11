@@ -1,5 +1,6 @@
 import {motion, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -9,10 +10,11 @@ function HorizontalScrollCarousel(){
         target: targetRef,
     });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-65%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-35%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[600vh] bg-black py-20" >
+        <section ref={targetRef} className="relative h-[600vh] bg-black py-20 
+        bg-radial-[at_90%_55%] from-[#303030] to-black at-50%" >
             <div className="sticky top-0 flex flex-col items-start overflow-hidden text-white">
                 <div className="text-center w-full text-4xl font-bold pt-10 p-4" style={{wordSpacing: "-5px"}}>Look at the glances of the work</div>
                 <div className="w-full text-center text-sm px-4">The work that has been completed over the years witht the expertise includes the process, design and result of the estonishing craft.</div>
@@ -23,6 +25,14 @@ function HorizontalScrollCarousel(){
                         })
                     }
                 </motion.div>
+                <div className="text-center w-full flex justify-center py-12">
+                    <button onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("profile_about")?.scrollIntoView({behavior: "smooth"});
+                    }} className="group px-5 py-2 tracking-tight text-white bg-blue-shade-new hover:text-white cursor-pointer duration-200 transition-all active:scale-80 mx-4">
+                        Get To Know <span className="me gap-2  inline-block transform transition-all group-hover:rotate-[360deg]">Me</span>
+                    </button>
+                </div>
             </div>
         </section>
     );

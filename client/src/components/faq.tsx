@@ -6,7 +6,10 @@ function FrequentlyAskedQuestions() {
     const questionAnswers = [
         { question: "How many years of experience do you have in industry?", answer: "I have more than 2 years of experience, worked on multiple projects for free as well as paid, currently working as freelancer" },
         { question: "Do you work alone or has a team?", answer: "I have experience working with both, I have collaborated with teams to deliver the product as well as a solo creator also." },
-        { question: "What payment methods are accepted?", answer: "Payments can be made online via bank transfer , e-wallets, or credit cards. On-site payments are also available for certail services." }
+        { question: "What payment methods are accepted?", answer: "Payments can be made online via bank transfer , e-wallets, or credit cards. On-site payments are also available for certail services." },
+        { question: "What services do you offer?", answer: "I provide end-to-end services including web development, mobile app development, UI/UX design, SEO, and digital marketing." },
+        { question: "How long does it usually take to complete a project?", answer: "The timeline depends on the scope of the project. A small website may take 2–3 weeks, while larger mobile apps or complex systems can take a few months." },
+        { question: "Do you provide ongoing support after project delivery?", answer: "Yes, I offer post-launch support, updates, bug fixes, and maintenance based on client needs." }
     ]
 
     const NumberTag: React.FC<({ value: number })> = ({ value }) => {
