@@ -1,7 +1,5 @@
 import {motion, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
-import { NavLink } from "react-router-dom";
-
 
 
 function HorizontalScrollCarousel(){
