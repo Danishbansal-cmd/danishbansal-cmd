@@ -16,11 +16,14 @@ function Header() {
                     e.preventDefault();
                     document.getElementById("profile_about")?.scrollIntoView({behavior: "smooth"});
                 }}   to={"#"} className={`${className}`}>About</NavLink>
-                <NavLink to={"#"} className={`${className}`}>Projects</NavLink>
+                <NavLink onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("projects")?.scrollIntoView({behavior: "smooth"});
+                }} to={"#"} className={`${className}`}>Projects</NavLink>
                 <NavLink onClick={(e) => {
                     e.preventDefault();
                     document.getElementById("experience")?.scrollIntoView({behavior: "smooth"});
-                }} to={"#experience"} className={`${className}`}>Experience</NavLink>
+                }} to={"#"} className={`${className}`}>Experience</NavLink>
                 <NavLink to={"https://docs.google.com/document/d/1wc0s1uKjlFkL4_J9jP38_Pr_1xs00Vls/edit?usp=sharing&ouid=106471281902682972298&rtpof=true&sd=true"} target="_blank" className={`${className} [word-spacing:-8px]`}>Resume &#x27b6;</NavLink>
             </>
         );

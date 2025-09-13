@@ -37,7 +37,7 @@ function ProfileSection() {
                     <div className="flex flex-col items-center justify-center gap-4">
                         {/* Experience */}
                         <div id="experience" className="bg-[#0f0f0f] p-2 border border-[#464141] w-full">
-                            <Accordion type="single" collapsible className="px-6">
+                            <Accordion type="single" collapsible className="px-6" defaultValue="item-1">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className="text-3xl font-bold" >Experience</AccordionTrigger>
                                     <AccordionContent>
@@ -96,10 +96,10 @@ function ProfileSection() {
 
                         {/* Education */}
                         <div className="bg-[#0f0f0f] p-2 border border-[#464141] w-full ">
-                            <Accordion type="single" collapsible className="px-6">
+                            <Accordion type="single" collapsible className="px-6" defaultValue="item-1">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className="text-3xl font-bold" >Education</AccordionTrigger>
-                                    <AccordionContent>
+                                    <AccordionContent >
                                         <div className="py-4 flex flex-col gap-14">
                                             <div>
                                                 <p style={{ fontFamily: "Sirivennela" }} className="text-xl italic">Chandigarh University, Gharuan, Punjab </p>
@@ -172,7 +172,7 @@ function ProfileSection() {
 
                         {/* Licenses and Achievements */}
                         <div className="bg-[#0f0f0f] p-2 border border-[#464141] w-full ">
-                            <Accordion type="single" collapsible className="px-6">
+                            <Accordion type="single" collapsible className="px-6" defaultValue="item-1">
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className="text-3xl font-bold" >Achievements</AccordionTrigger>
                                     <AccordionContent>

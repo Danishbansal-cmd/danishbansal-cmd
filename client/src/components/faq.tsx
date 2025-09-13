@@ -32,7 +32,7 @@ function FrequentlyAskedQuestions() {
                             questionAnswers.map((qA, index) => (
                                 <li key={index}>
                                     {/* <div className="flex items-center pl-3"> */}
-                                    <Accordion type="single" collapsible className="px-6 w-full">
+                                    <Accordion type="single" collapsible className="px-6 w-full" defaultValue="item-1">
                                         <AccordionItem value="item-1">
                                             <div className="flex gap-4 items-center w-full">
                                                 <NumberTag value={index + 1} />

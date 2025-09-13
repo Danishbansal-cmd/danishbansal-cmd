@@ -7,7 +7,7 @@ import Tags from "./common/tags";
 
 function Projects() {
     return (
-        <div className="w-screen flex items-center bg-black justify-center px-5 text-white 
+        <div id="projects" className="w-screen flex items-center bg-black justify-center px-5 text-white 
         bg-radial-[at_10%_45%] from-[#464545]  to-black to-60%"  >
             <div className="lg:container w-full my-20 flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center pb-12">
