@@ -20,7 +20,7 @@ function HomeContent() {
                     <div className="scale-80 md:scale-100 border border-border-shade flex items-center justify-center overflow-hidden w-full h-fit pointer-events-none">
                         <div className="orbit w-full p-[2px]">
 
-                            <div className="bg-radial-[at_5%_5%] from-[#464545] to-black to-60% flex justify-between items-end gap-6">
+                            <div className="bg-radial-[at_5%_5%] from-[#464545] to-black to-60% flex flex-col sm:flex-row sm:items-center justify-between items-center gap-6">
                                 <div className="flex flex-col flex-1 items-start justify-end h-full w-full">
                                     <div className="bg-no-repeat bg-cover bg-bottom w-50 h-80 sm:w-70 sm:h-70 md:h-60 max-h-full" style={{backgroundImage: `url(/images/vector_danish.png)`}}></div>
                                 </div>
