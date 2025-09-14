@@ -5,9 +5,7 @@ function Footer() {
         <footer className="w-screen px-5 bg-[#101010] flex flex-col items-center text-white">
             <div className="border lg:container w-full border-[#464141] my-8 p-8">
                 <div className="text-left">
-                    <p className="leading-none uppercase text-base font-bold">have a project in mind?</p>
-                    <p  className="leading-none uppercase text-[15vw] font-extrabold text-zinc-700 tracking-tighter" 
-                    style={{ lineHeight: "0.9", textIndent: "-1rem" }}>let's talk</p> 
+                    <div className="bg-contain bg-no-repeat bg-center w-full h-20 sm:h-30 md:h-40 lg:h-40 xl:h-55" style={{backgroundImage: `url(/images/get_project.png)`}}></div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-5 items-start justify-between md:items-center mt-10">
